@@ -25,7 +25,8 @@ if response.status_code == 200:
 
 else:
     print("Failed to retrieve the web page. Status code:", response.status_code)
-
-for elem in x[5:]:
-    for i in range(3):
-        print (x[i+5])
+tmp = 0
+for i in range (5, len(x[5:])+2):
+    for j in range(4):
+        print (x[i + tmp])
+        tmp+=1
