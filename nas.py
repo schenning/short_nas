@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 
 url = 'https://ssr.finanstilsynet.no/Home/Details/NO0010196140'
+api = 'https://ssr.finanstilsynet.no/api/v2/instruments'
+
 
 
 response = requests.get(url)
